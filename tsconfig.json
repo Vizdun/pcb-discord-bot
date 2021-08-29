@@ -2,8 +2,10 @@
 	"compilerOptions": {
 			"target": "ES6",
 			"module": "CommonJS",
-			"outDir": "build",
+			"outDir": "dist",
 			"rootDir": "src",
 			"strict": true,
+			"resolveJsonModule": true,
+			"esModuleInterop": true,
 	}
 }

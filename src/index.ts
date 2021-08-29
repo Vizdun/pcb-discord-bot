@@ -1,5 +1,5 @@
 import { Client, Intents, Message } from "discord.js"
-import { TOKEN } from "./globals"
+import { token } from "./config.json"
 import { onMessage } from "./onMessage"
 const client = new Client({
 	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
@@ -14,4 +14,4 @@ client.on("messageCreate", (message: Message) => {
 	onMessage(message)
 })
 
-client.login(TOKEN)
+client.login(token)

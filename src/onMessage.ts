@@ -1,7 +1,7 @@
 import { Message } from "discord.js"
-import { COMMAND_PREFIX } from "./globals"
+import { commandPrefix } from "./config.json"
 import { onCommand } from "./onCommand"
 
 export function onMessage(message: Message) {
-	if (message.content.startsWith(COMMAND_PREFIX)) onCommand(message)
+	if (message.content.startsWith(commandPrefix)) onCommand(message)
 }
