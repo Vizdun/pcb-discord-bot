@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Vizdun/pcb-discord-bot#readme",
   "dependencies": {
-    "discord.js": "^13.1.0"
+    "@types/natural": "^5.0.0",
+    "discord.js": "^13.1.0",
+    "natural": "^5.0.5"
   }
 }
