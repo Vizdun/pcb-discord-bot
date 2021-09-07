@@ -39,8 +39,9 @@ const jewNameParts = [
 ]
 
 import { Message } from "discord.js"
+import { CommandArguments } from "../parseCommand"
 
-export function jewName(message: Message, args: string[]) {
+export function jewName(message: Message, args: CommandArguments) {
 	const tag: string = message.author.tag.split("#")[1]
 	var jewName = ""
 
