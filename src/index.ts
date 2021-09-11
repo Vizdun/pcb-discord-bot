@@ -1,4 +1,4 @@
-import { Client, Intents, Message } from "discord.js";
+import { Client, Intents, Message, version } from "discord.js";
 import { token } from "./config.json";
 import { onMessage } from "./onMessage";
 const client = new Client({
@@ -7,6 +7,12 @@ const client = new Client({
 
 client.on("ready", () => {
   console.log("ready");
+  client.user?.setActivity(
+    `Running on Node.js ${process.version} and Discord.js ${version}`,
+    {
+      type: "PLAYING",
+    }
+  );
 });
 
 client.on("messageCreate", (message: Message) => {
